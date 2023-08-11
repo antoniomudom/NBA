@@ -7,23 +7,35 @@ const userSchema = new Schema(
       type: String,
       trim: true,
       required: false,
-      unique: true
+      unique: true,
     },
     email: {
       type: String,
       required: true,
       unique: true,
       lowercase: true,
-      trim: true
+      trim: true,
     },
     password: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
+    role: {
+      type: String,
+      enum: ["user", "admin"],
+      default: "user",
+    },
+
+    profilePic: {
+      type: String, //url clouding
+    },
+    favorito: { 
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: "equipos", },
   },
   {
-    // this second object adds extra properties: `createdAt` and `updatedAt`    
-    timestamps: true
+    // this second object adds extra properties: `createdAt` and `updatedAt`
+    timestamps: true,
   }
 );
 
