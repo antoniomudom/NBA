@@ -30,7 +30,7 @@ const userSchema = new Schema(
       type: String, //url clouding
     },
     favorito: { 
-      type: mongoose.Schema.Types.ObjectId, 
+      type: Schema.Types.ObjectId, 
       ref: "equipos", },
   },
   {

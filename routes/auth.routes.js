@@ -21,6 +21,7 @@ router.post("/signup", async (req, res, next) => {
     //validaciones de contraseña
     const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm
     if (regexPassword.test(password) === false) {
+        console.log("contraseña mal")
       res.status(400).render("auth/signup.hbs", {
         errorMessage: "La contraseña debe tener al menos, una mayuscula, una minuscula, un caracter especial y tener 8 caracteres o más"
       })
@@ -86,13 +87,17 @@ router.post("/login", async (req, res, next) => {
     //sesion abierta
     req.session.user = {
         _id: foundUser._id,
-        email: foundUser.email,
+        email: foundUser.email,       
         role: foundUser.role
       }
     //iniciamos sesion en express y mongo
-    req.session.save(() => {
     
-    res.redirect("/user")
+    req.session.save(() => {
+    if (foundUser.role === "admin"){
+    res.redirect("/user/admin")}
+    else{
+        res.redirect("/user")
+    }
     })
   
     
