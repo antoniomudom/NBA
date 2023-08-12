@@ -16,4 +16,18 @@ router.use("/auth", authRouter)
 const userRouter = require("./user.routes.js")
 router.use("/user", userRouter)
 
+
+//routa de conferencias
+router.get("/conferencias",(req,res,next)=>{
+  res.render("conferencias");
+
+})
+router.get("/eastern", (req,res,next)=>{
+  res.render("eastern")
+})
+
+router.get("/western", (req,res,next)=>{
+  res.render("western")
+})
+
 module.exports = router;

@@ -1,0 +1,64 @@
+[
+    {
+        "nombre": "LeBron James",
+       " temporadas": 20,
+        "titulos": 3,
+         "equipo": "Cleveland Cavaliers"
+       
+         },{
+        "nombre": "Kareem Abdul-Jabbar",
+       " temporadas": 20,
+        "titulos": 3, 
+         "equipo": "Milwaukee Bucks"
+       
+         },{
+        "nombre": "Karl Malone",
+       " temporadas": 13,
+        "titulos": 0,
+         "equipo": "Utah Jazz"
+       
+         },{
+        "nombre": "Kobe Bryant",
+       " temporadas": 20, 
+        "titulos": 6,
+         "equipo": "Los Angeles Lakers"
+       
+         },{
+        "nombre": "Michael Jordan",
+       " temporadas": 16,
+        "titulos": 6,
+         "equipo": "Chicago Bulls"
+       
+         },{
+        "nombre": "Dirk Nowitzki",
+       " temporadas": 20,
+        "titulos": 1,
+         "equipo": "Dallas Mavericks"
+       
+         },{
+        "nombre": "Carmelo Anthony",
+       " temporadas": 20,
+        "titulos": 0,
+         "equipo": "New York Knicks"
+       
+         },{
+        "nombre": "Kevin Garnett",
+       " temporadas": 21,
+        "titulos": 1,
+         "equipo": "Timberwolves"
+       
+         },{
+        "nombre": "Tim Duncan",
+       " temporadas": 20,
+        "titulos": 4,
+         "equipo": "San Antonio Spurs"
+       
+         },{
+        "nombre": "Hakeem Olajuwon",
+       " temporadas": 17,
+        "titulos": 1,
+         "equipo": "Houston Rockets"
+       
+         }
+       
+]
