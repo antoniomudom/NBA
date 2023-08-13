@@ -13,7 +13,7 @@ const leyendaSchema = new Schema({
     type: Number,
     required: true
   },
-  equipo: {
+  Equipo: {
     type: Schema.Types.ObjectId,
     ref: "Equipo"
   },

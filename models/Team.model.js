@@ -39,7 +39,7 @@ const equipoSchema = new Schema({
   },
   conferencia: {
     type: String,
-    enum: ["este", "oeste"],
+    enum: ["Eastern", "Western"],
     required: true,
   },
   historia: {

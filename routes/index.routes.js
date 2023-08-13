@@ -29,5 +29,20 @@ router.get("/eastern", (req,res,next)=>{
 router.get("/western", (req,res,next)=>{
   res.render("western")
 })
+//Rutas de favorito
+
+router.get("/favorito",(req,res,next)=>{
+  res.render("favorito");
+
+})
+
+//Ruta de pronósticos
+
+router.get("/pronostico",(req,res,next)=>{
+  res.render("pronostico");
+
+})
+
+
 
 module.exports = router;

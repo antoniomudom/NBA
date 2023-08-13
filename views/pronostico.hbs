@@ -1,0 +1,41 @@
+<div>
+
+  <h3>El campeón de la NBA va a ser...</h3>
+
+  <h3>Formulario de crear un libro</h3>
+
+  <form action="/" method="post">
+
+    <label for="teams">Equipo campeón</label>
+    <select class="form-select" name="teams" multiple>
+
+      {{#each this.allTeams}}
+
+        <option value="{{this._id}}">{{this.name}}</option>
+
+      {{/each}}
+
+    </select>
+    <br />
+
+    <button>Agregar</button>
+    <br />
+    <div>
+      <label>Mejor atacante</label>
+      <input type="text" />
+
+    </div>
+
+    <br />
+    <div>
+      <label>Mejor defensa</label>
+      <input type="text" />
+
+    </div>
+
+    <br />
+
+    {{! <input type="text" name="author"> }}
+
+  </form>
+</div>
