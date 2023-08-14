@@ -1,6 +1,51 @@
 <div>
-<h1>MI LEYENDA</h1>
+  <h1>MI LEYENDA</h1>
+  <form action="/mylegend" method="post">
 
+    <br />
+    <div>
+      <label>Nombre</label>
+      <input type="text" />
 
+    </div>
+    <br />
+    <div>
+      <label>Temporadas</label>
+      <input type="number" />
+
+    </div>
+    <br />
+    <div>
+      <label>titulos</label>
+      <input type="number" />
+
+    </div>
+    <br />
+
+    <div>
+      
+
+      <label for="teams">Equipo</label>
+
+      <select class="form-select" name="teams" multiple>
+        {{#each allTeams}}
+
+          <option value="{{this._id}}">{{this.nombre}}</option>
+
+        {{/each}}
+
+      </select>
+      <br />
+
+    </div>
+
+    <br />
+    <div>
+
+    </div>
+
+    <button>Agregar</button>
+
+  </form>
 
 </div>

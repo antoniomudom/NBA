@@ -4,9 +4,11 @@ const Leyenda = require("../models/Legend.model.js");
 const Equipo = require("../models/Team.model.js");
 
 //creacion de leyenda
-router.get("/mylegend", (req, res, next) => {
-  res.render("mylegend");
-});
+router.get("/", (req, res, next) => {
+  console.log("hola")
+    res.render("mylegend.hbs"); 
+  })
+  
 
 router.post("/mylegend", async (req, res, next) => {
   console.log(req.body);
@@ -32,23 +34,28 @@ router.post("/mylegend", async (req, res, next) => {
       temporadas: req.body.temporadas,
       titulos: req.body.titulos,
       equipo: req.body.equipo,
-      ProfilePic: req.body.ProfilePic,
+      //ProfilePic: req.body.ProfilePic,
     });
-    res.redirect("/mylegend");
+    res.redirect("/mylegend-list");
   } catch (error) {
     next(error);
   }
 });
 
-router.get("/legend", async (req, res, next) => {
-  try {
-    const response = await legend.find().select({ name: 1 });
-    res.render("legend-list.hbs", {
-      allLegend: response,
-    });
-  } catch (error) {
-    next(error);
-  }
-});
+router.get("/legend",(req, res, next) => {
+  Equipo.find().select({ nombre: 1 })
 
+   .then((response)=>{
+    console.log(response)
+    res.render("mylegend.hbs", {
+      allTeams: response  })
+
+
+ 
+    
+    })
+   .catch ((error) =>{
+    next(error);
+  })
+});
 module.exports = router;
