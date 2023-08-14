@@ -20,7 +20,7 @@ const leyendaSchema = new Schema({
 creator:{
 type: String, 
     enum: ["admin", "user"], 
-    required: true
+    default:"user"
   },
 
 

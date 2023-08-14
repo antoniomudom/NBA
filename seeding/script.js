@@ -1,4 +1,6 @@
 const mongoose = require("mongoose")
+const express=require("express")
+const router=express.Router()
 
 const allTeams = require("./teams.json")
 const Equipo = require("../models/Team.model.js")

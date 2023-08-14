@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const Equipo = require("../models/Team.model.js")
 const { updateLocals } = require("../middlewares/auth.middlewares.js")
 router.use(updateLocals)
 
@@ -38,8 +39,22 @@ router.get("/favorito",(req,res,next)=>{
 
 //Ruta de pronósticos
 
-router.get("/pronostico",(req,res,next)=>{
-  res.render("pronostico");
+router.get("/pronostico", (req, res, next) => {
+   Equipo.find().select({ nombre: 1 })
+   .then((response)=>{
+    res.render("pronostico.hbs", {
+      allTeams: response,
+
+
+   })
+    
+    })
+   .catch ((error) =>{
+    next(error);
+  })
+});
+router.post("/pronostico",(req,res,next)=>{
+  res.redirect("/pronostico-favorito.hbs");
 
 })
 

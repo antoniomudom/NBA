@@ -31,7 +31,7 @@ const userSchema = new Schema(
     },
     favorito: { 
       type: Schema.Types.ObjectId, 
-      ref: "equipos", },
+      ref: "Equipo", },
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`

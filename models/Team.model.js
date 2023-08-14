@@ -55,7 +55,7 @@ const equipoSchema = new Schema({
     required: true,
   },
   image: {
-    type: String, //(url de cloudinary)
+    type: String, 
   },
 });
 
