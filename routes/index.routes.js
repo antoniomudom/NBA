@@ -45,4 +45,7 @@ router.get("/pronostico",(req,res,next)=>{
 
 
 
+
+
+
 module.exports = router;
