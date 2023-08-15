@@ -1,8 +1,8 @@
-<div>
+{{!-- <div>
 
   <h3>El campeón de la NBA va a ser...</h3>
 
-  <form action="/pronostico" method="post">
+  <form action="/pronostico-favorito" method="post">
 
     <label for="teams">Equipo campeón</label>
     <select class="form-select" name="teams" multiple>
@@ -41,5 +41,27 @@
 
     {{! <input type="text" name="author"> }}
 
+  </form>
+</div> --}}
+
+<div>
+  <h3>El campeón de la NBA va a ser...</h3>
+  <form action="/pronostico-favorito" method="post">
+    <label for="teams">Equipo campeón</label>
+    <select class="form-select" name="teams" multiple>
+      {{#each allTeams}}
+        <option value="{{this._id}}">{{this.nombre}}</option>
+      {{/each}}
+    </select>
+    <br />
+    <label for="favoriteTeams">Equipo Amado</label>
+    <select class="form-select" name="favoriteTeams" multiple>
+      {{#each allTeams}}
+        <option value="{{this._id}}">{{this.nombre}}</option>
+      {{/each}}
+    </select>
+    <br />
+    <button type="submit">Agregar</button>
+    <br />
   </form>
 </div>

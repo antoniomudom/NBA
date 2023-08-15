@@ -1,6 +1,6 @@
 
 
-<div>
+{{!-- <div>
 
     <h3>Pronóstico</h3>
 
@@ -24,4 +24,21 @@
 
   {{/each}}
 
+</div> --}}
+<div>
+    <h3>Pronóstico Favorito</h3>
+
+    <ul>
+        <h4>Equipos Campeones:</h4>
+        {{#each championTeams}}
+        <li>{{this.nombre}}</li>
+        {{/each}}
+    </ul>
+
+    <ul>
+        <h4>Equipos Amados:</h4>
+        {{#each favoriteTeams}}
+        <li>{{this.nombre}}</li>
+        {{/each}}
+    </ul>
 </div>
