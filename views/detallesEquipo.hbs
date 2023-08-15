@@ -1,0 +1,17 @@
+
+<h1>Detalles del Equipo - {{ equipo.nombre }}</h1>
+    
+    <div>
+        <img src="{{ equipo.image }}" alt="{{ equipo.nombre }}" width="200px">
+    </div>
+    
+    <div>
+        <h2>Información del Equipo</h2>
+        <p><strong>Nombre:</strong> {{ equipo.nombre }}</p>
+        <p><strong>Conferencia:</strong> {{ equipo.conferencia }}</p>
+        <p><strong>Historia:</strong> {{ equipo.historia }}</p>
+        <p><strong>Títulos:</strong> {{ equipo.titulos }}</p>
+        <p><strong>Sede:</strong> {{ equipo.sede }}</p>
+    </div>
+    
+    <a href="/conferencias">Volver a la lista de conferencias</a>
