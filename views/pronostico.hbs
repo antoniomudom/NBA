@@ -2,8 +2,6 @@
 
   <h3>El campeón de la NBA va a ser...</h3>
 
-  
-
   <form action="/pronostico" method="post">
 
     <label for="teams">Equipo campeón</label>
@@ -11,30 +9,15 @@
 
       {{#each allTeams}}
 
-        <option value="{{this._id}}">{{this.name}}</option>
+        <option value="{{this._id}}">{{this.nombre}}</option>
 
       {{/each}}
 
     </select>
     <br />
 
-    
-    <div>
-      <label>Mejor atacante</label>
-      <input type="text" />
-
-    </div>
-
+    <button>Agregar</button>
     <br />
-    <div>
-      <label>Mejor defensa</label>
-      <input type="text" />
-
-    </div>
-
-<button>Agregar</button>
-    <br />
-
 
     <br />
 

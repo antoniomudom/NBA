@@ -1,5 +1,10 @@
 <div>
-
-
-    <h1>aqui leyendas</h1>
+  <h1>Aquí están las leyendas</h1>
+  <ul>
+    {{#each leyendas}}
+      <li>
+        <a href="/mylegend/legend-details/{{this._id}}">{{this.nombre}}</a>
+      </li>
+    {{/each}}
+  </ul>
 </div>

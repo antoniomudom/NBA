@@ -12,8 +12,9 @@ router.get("/", (req, res, next) => {
 const authRouter = require("./auth.routes.js");
 router.use("/auth", authRouter);
 
-const userRouter = require("./user.routes.js");
-router.use("/user", userRouter);
+const legendRouter = require("./legend.routes.js")
+router.use("/mylegend", legendRouter)
+
 
 //routa de conferencias
 router.get("/conferencias", (req, res, next) => {
@@ -23,31 +24,57 @@ router.get("/eastern", (req, res, next) => {
   res.render("eastern");
 });
 
-router.get("/western", (req, res, next) => {
-  res.render("western");
-});
-//Rutas de favorito
 
-router.get("/favorito", (req, res, next) => {
-  res.render("favorito");
-});
+router.get("/eastern", (req,res,next)=>{
+  res.render("eastern")
+})
+
+router.get("/western", (req,res,next)=>{
+  res.render("western")
+})
+
 
 //Ruta de pronósticos
 
 router.get("/pronostico", (req, res, next) => {
-  Equipo.find()
-    .select({ nombre: 1 })
-    .then((response) => {
-      res.render("pronostico.hbs", {
-        allTeams: response,
-      });
+   Equipo.find().select({ nombre: 1 })
+
+   .then((response)=>{
+    console.log(response)
+    res.render("pronostico.hbs", {
+      allTeams: response  })
+
+
+ 
+    
     })
     .catch((error) => {
       next(error);
     });
 });
-router.post("/pronostico", (req, res, next) => {
-  res.redirect("/pronostico-favorito.hbs");
+
+ 
+
+router.get("/favorito", (req, res, next) => {
+  Equipo.find().select({ nombre: 1 })
+
+  .then((response)=>{
+   console.log(response)
+   console.log("test")
+   res.render("favorito.hbs", {
+     allTeams: response  })
+
+
+
+   
+   })
+  .catch ((error) =>{
+   next(error);
+ })
 });
+
+
+
+
 
 module.exports = router;

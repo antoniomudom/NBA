@@ -1,0 +1,15 @@
+<div>
+  <h1>Detalles de la Leyenda</h1>
+  <p>Nombre: {{leyenda.nombre}}</p>
+  <p>Temporadas: {{leyenda.temporadas}}</p>
+  <p>Títulos: {{leyenda.titulos}}</p>
+  <p>Equipo: {{leyenda.Equipo.nombre}}</p>
+  <p>Creador: {{leyenda.creator}}</p>
+  <p>ProfilePic: {{leyenda.ProfilePic}}</p>
+
+  <a href="/mylegend/legend-edit/{{leyenda._id}}"><button>Editar</button></a>
+  
+  <form action="/mylegend/legend-delete/{{leyenda._id}}" method="post">
+    <button type="submit">Eliminar</button>
+  </form>
+</div>

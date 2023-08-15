@@ -29,9 +29,14 @@ const userSchema = new Schema(
     profilePic: {
       type: String, //url clouding
     },
-    favorito: { 
-      type: Schema.Types.ObjectId, 
-      ref: "Equipo", },
+    favorito: {
+      type: Schema.Types.ObjectId,
+      ref: "Equipo",
+    },
+    pronostico: {
+      type: Schema.Types.ObjectId,
+      ref: "Equipo",
+    },
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`
