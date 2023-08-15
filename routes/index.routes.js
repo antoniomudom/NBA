@@ -58,23 +58,23 @@ router.get("/pronostico", (req, res, next) => {
 
  
 
-router.get("/favorito", (req, res, next) => {
-  Equipo.find().select({ nombre: 1 })
+// router.get("/favorito", (req, res, next) => {
+//   Equipo.find().select({ nombre: 1 })
 
-  .then((response)=>{
-   console.log(response)
-   console.log("test")
-   res.render("favorito.hbs", {
-     allTeams: response  })
+//   .then((response)=>{
+//    console.log(response)
+//    console.log("test")
+//    res.render("pronostico.hbs", {
+//      allTeams: response  })
 
 
 
    
-   })
-  .catch ((error) =>{
-   next(error);
- })
-});
+//    })
+//   .catch ((error) =>{
+//    next(error);
+//  })
+// });
 
 
 

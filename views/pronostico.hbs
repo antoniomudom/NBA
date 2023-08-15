@@ -16,6 +16,24 @@
     </select>
     <br />
 
+    <h3>Aquí tus favoritos </h3>
+     <form action="/favorito" method="post">
+
+    <label for="teams">Equipo Amado</label>
+    <select class="form-select" name="teams" multiple>
+
+      {{#each allTeams}}
+
+        <option value="{{this._id}}">{{this.nombre}}</option>
+
+      {{/each}}
+
+    </select>
+    <br />
+
+    </form>
+
+
     <button>Agregar</button>
     <br />
 
