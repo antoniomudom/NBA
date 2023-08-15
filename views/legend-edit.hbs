@@ -1,0 +1,35 @@
+<div>
+  <h1>Editar Leyenda</h1>
+  <form action="/mylegend/legend-edit/{{leyenda._id}}" method="post">
+    <div>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" value="{{leyenda.nombre}}" />
+    </div>
+    <br />
+    <div>
+      <label for="temporadas">Temporadas</label>
+      <input type="number" name="temporadas" value="{{leyenda.temporadas}}" />
+    </div>
+    <br />
+    <div>
+      <label for="titulos">Títulos</label>
+      <input type="number" name="titulos" value="{{leyenda.titulos}}" />
+    </div>
+    <br />
+    <div>
+      <label for="equipo">Equipo</label>
+      <select class="form-select" name="equipo">
+        {{#each allTeams}}
+          {{#if (this._id === leyenda.Equipo._id)}}
+            <option value="{{this._id}}" selected>{{this.nombre}}</option>
+          {{else}}
+            <option value="{{this._id}}">{{this.nombre}}</option>
+          {{/if}}
+        {{/each}}
+      </select>
+      <br />
+    </div>
+    <br />
+    <button type="submit">Guardar Cambios</button>
+  </form>
+</div>
