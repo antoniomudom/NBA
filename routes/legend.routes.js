@@ -76,8 +76,8 @@ router.get("/legend-list", async (req, res, next) => {
 // Ver propiedades de una leyenda
 router.get("/legend-details/:id", async (req, res, next) => {
   try {
-    const leyenda = await Leyenda.findById(req.params.id);
-    if (!leyenda) {
+const leyenda = await Leyenda.findById(req.params.id).populate("Equipo");
+    if     (!leyenda) {
       res.status(404).send("Leyenda no encontrada");
       return;
     }
@@ -86,14 +86,29 @@ router.get("/legend-details/:id", async (req, res, next) => {
     next(error);
   }
 });
+router.get("/legend-edit/:id", async(req,res,next)=>{
+ 
+  try {
+    const allTeams= await  Equipo.find().select({ nombre: 1 });
+    const leyenda = await Leyenda.findById(req.params.id).populate("Equipo");
+        if     (!leyenda) {
+          res.status(404).send("Leyenda no encontrada");
+          return;
+        }
+        res.render("legend-edit.hbs", { leyenda,allTeams });
+      } catch (error) {
+        next(error);
+      }
+
+})
 router.post("/legend-edit/:id", async (req, res, next) => {
   try {
-    const { nombre, temporadas, titulos, equipo } = req.body;
+    const { nombre, temporadas, titulos, Equipo } = req.body;
     await Leyenda.findByIdAndUpdate(req.params.id, {
       nombre,
       temporadas,
       titulos,
-      equipo,
+      Equipo,
     });
     res.redirect(`/mylegend/legend-details/${req.params.id}`);
   } catch (error) {

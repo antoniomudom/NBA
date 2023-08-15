@@ -12,6 +12,9 @@ router.get("/", (req, res, next) => {
 const authRouter = require("./auth.routes.js");
 router.use("/auth", authRouter);
 
+const userRouter = require("./user.routes.js")
+router.use("/user", userRouter)
+
 const legendRouter = require("./legend.routes.js")
 router.use("/mylegend", legendRouter)
 

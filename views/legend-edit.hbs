@@ -17,14 +17,12 @@
     </div>
     <br />
     <div>
-      <label for="equipo">Equipo</label>
-      <select class="form-select" name="equipo">
+      <label for="Equipo">Equipo</label>
+      <select class="form-select" name="Equipo">
         {{#each allTeams}}
-          {{#if (this._id === leyenda.Equipo._id)}}
-            <option value="{{this._id}}" selected>{{this.nombre}}</option>
-          {{else}}
+         
             <option value="{{this._id}}">{{this.nombre}}</option>
-          {{/if}}
+         
         {{/each}}
       </select>
       <br />
