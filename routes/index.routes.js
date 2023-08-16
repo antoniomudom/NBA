@@ -19,6 +19,7 @@ const legendRouter = require("./legend.routes.js");
 router.use("/mylegend", legendRouter);
 
 const equipoRouter = require("./equipos.routes.js");
+const User = require("../models/User.model.js");
 router.use("/equipo", equipoRouter);
 
 //routa de conferencias
@@ -57,30 +58,27 @@ router.get("/pronostico", (req, res, next) => {
 router.get("/pronostico-favorito", (req, res, next) => {
   // Realiza la lógica para obtener los datos guardados
   res.render("pronostico-favorito.hbs", {
-    championTeams: [], // Coloca aquí los datos de los campeones guardados
-    favoriteTeams: [], // Coloca aquí los datos de los equipos amados guardados
+    championTeams: [], // aqui va el equipo que creemos que va a salir campeón. Si fuera fútbol sería el Sevilla FC
+    favoriteTeams: [], // aqui dentro va el dato del equipo favorito
   });
 });
 
 router.post("/pronostico-favorito", (req, res, next) => {
   const championTeams = req.body.teams; // Recupera id de los equipos campeones seleccionados
   const favoriteTeams = req.body.favoriteTeams; // igual que arriba pero de los equipos amados seleccionados
-  //sacado de la documentación de Mongo el $in
-  // Aquí puedes realizar la lógica para buscar los equipos favoritos en la base de datos
-  //   //Checks if the array includes at least ONE of the values.
-
-  // // Syntax: { arrayProperty: { $in: [ value1, value2 ] } }
-
-  // Realiza la lógica para buscar los equipos campeones en la base de datos
-  Equipo.find({ _id: { $in: championTeams } }) //recupera los datos de la DB del array championTeams(del equipo seleccionado) buscandolo por ID
+  console.log(championTeams)
+  console.log(favoriteTeams)
+  User.findByIdAndUpdate(req.session.user._id,{pronostico:championTeams})//ide del usuario logueado,propiedd que queremos actualizar del usuario) //recupera los datos de la DB del array championTeams(del equipo seleccionado) buscandolo por ID
     .then((championTeamsData) => {
       // Realiza la lógica para buscar los equipos amados en la base de datos
-      Equipo.find({ _id: { $in: favoriteTeams } }) //lo mismo que en championteams pero de favoriteTeam
+      User.findByIdAndUpdate(req.session.user._id,{favorito:favoriteTeams}) //lo mismo que en championteams pero de favoriteTeam
         .then((favoriteTeamsData) => {
           res.render("pronostico-favorito.hbs", {
             championTeams: championTeamsData,
             favoriteTeams: favoriteTeamsData,
           });
+          console.log(championTeams)
+          console.log(favoriteTeams)
         })
         .catch((error) => {
           next(error);
