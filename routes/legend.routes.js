@@ -122,7 +122,7 @@ router.get("/legend-details/:id", async (req, res, next) => {
 });
 
 // Acción de eliminar leyenda (POST)
-router.post("/legend-delete/:id",isAdmin, async (req, res, next) => {
+router.post("/legend-delete/:id", async (req, res, next) => {
   try {
     await Leyenda.findByIdAndDelete(req.params.id);
     res.redirect("/mylegend/legend-list");

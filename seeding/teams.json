@@ -1,213 +1,212 @@
 [
-    {
-        "nombre": "Atlanta Hawks",
-        "conferencia": "Eastern",
-        "historia": "El equipo fue fundado en 1946 como Tri-Cities Blackhawks en la zona del río Misisipi. Tras trasladarse a Milwaukee, Wisconsin, en 1951, la franquicia fue renombrada como Milwaukee Hawks. Antes de la temporada 1955-56, los Hawks se mudaron a San Luis, Misuri, pasando en la ciudad trece temporadas y ganando el campeonato de 1958, el único en la historia de la franquicia. Finalmente, en 1968 se movieron a Atlanta, Georgia.  ",
-        "titulos": 1,
-          "sede": " State Farm Arena"
-        },
-      {
-        "nombre": "Boston Celtics",
-        "conferencia": "Eastern",
-        "historia": "Fundado en 1946, con sus 17 campeonatos es el equipo más laureado de la historia de la NBA,1 junto con Los Angeles Lakers que, con su anillo ganado en 2020, consiguieron igualarles en campeonatos. El equipo dominó la NBA desde 1957 hasta 1969 con once anillos de campeón, ocho de ellos consecutivos, récord de la liga. ",
-        "titulos": 17,
-          "sede": "TD Garden"
-        },
-      {
-        "nombre": "Brooklyn Nets",
-        "conferencia": "Eastern",
-        "historia": "El equipo fue fundado en 1967 con el nombre de New Jersey Americans y comenzó jugando en la ABA. En 1968 la franquicia se mudó a Nueva York, donde adoptaron el nombre de New York Nets. Con este nombre ingresaron en la NBA en 1976. Un año después regresaron a Nueva Jersey, donde se llamaron New Jersey Nets, hasta que en el año 2012 se trasladaron a Brooklyn y pasaron a ser denominados Brooklyn Nets.",
-        "titulos": 0,
-          "sede": "Barclays Center"
-        },
-      {
-        "nombre": "Charlotte Hornets",
-        "conferencia": "Eastern",
-        "historia": "Los Hornets originales fueron fundados en 1988 como un equipo de expansión, propiedad del empresario George Shinn. En 2002, Shinn trasladó el equipo a Nueva Orleans, que se convirtió en los New Orleans Hornets. Dos años después, la NBA estableció un nuevo equipo de expansión para Charlotte: los Charlotte Bobcats. En el año 2013, la franquicia de Luisiana anunció que cambiaría su nombre por el de New Orleans Pelicans,1 y al mismo tiempo Charlotte comunicó que recuperaría la denominación Hornets",
-        "titulos": 0,
-          "sede": "Spectrum Center"
-        },
-      {
-        "nombre": "Chicago Bulls",
-        "conferencia": "Eastern",
-        "historia": "Fundado en 1966. Es el tercer equipo profesional con sede en esta ciudad tras Chicago Packers/Zephyrs y Chicago Stags, equipo que participó en los años 1940 en la BAA, antigua denominación de la liga profesional norteamericana de baloncesto.",
-        "titulos": 6,
-          "sede": "United Center"
-        },
-      {
-        "nombre": "Cleveland Cavaliers",
-        "conferencia": "Eastern",
-        "historia": "Los Cavaliers comenzaron jugando en la NBA en 1970, siendo propietario del equipo Nick Mileti. Por entonces, jugaban sus partidos como local en el Cleveland Arena y eran entrenados por Bill Fitch. En su primera temporada lograron un balance de 15 victorias por 67 derrotas.",
-        "titulos": 1,
-          "sede": "Rocket Mortgage FieldHouse"
-        },
-      {
-        "nombre": "Detroit Pistons",
-        "conferencia": "Eastern",
-        "historia": "La franquicia fue fundada en 1941 en Fort Wayne, Indiana con el nombre de Fort Wayne Zollner Pistons. Jugaron en la National Basketball League (NBL) hasta su entrada en la Basketball Association of America (BAA) en 1948. En 1957 su fundador, Fred Zollner, trasladó al equipo a Detroit.",
-        "titulos": 3,
-          "sede": "Little Caesars Arena"
-        },
-      {
-        "nombre": "Indiana Pacers",
-        "conferencia": "Eastern",
-        "historia": "Los Pacers comenzaron a jugar en la temporada 1967-68 de la ABA, una liga alternativa a la NBA. Durante sus seis primeros años, jugaron en el Indiana State Fairgrounds Coliseum, ahora llamado Pepsi Coliseum, mudándose en 1974 al Market Square Arena, situado en el centro de la ciudad de Indianápolis.",
-        "titulos": 0,
-          "sede": "Gainbridge Fieldhouse"
-        },
-      {
-        "nombre": "Miami Heat",
-        "conferencia": "Eastern",
-        "historia": "El equipo fue fundado en 1988 gracias a la expansión de la NBA en 1987. Cuenta con tres títulos de la NBA, obtenidos en la temporada 2005-06 al vencer a Dallas Mavericks (4-2), en la 2011-12 derrotando a Oklahoma City Thunder (4-1) y en la 2012-13 derrotando en el séptimo partido a San Antonio Spurs (4-3). Además de los tres anillos, ha obtenido 16 títulos de división.",
-        "titulos": 3,
-          "sede": "Kaseya Center"
-        },
-      {
-        "nombre": "Milwaukee Bucks",
-        "conferencia": "Eastern",
-        "historia": "Los Milwaukee Bucks fueron creados en enero de 1968, cuando la NBA llevó el baloncesto a la ciudad de Milwaukee, en Wisconsin. El primer partido oficial de los Bucks fue contra los Chicago Bulls, siendo la 1968-69, la primera en la historia de la franquicia. ",
-        "titulos": 2,
-          "sede": "Fiserv Forum"
-        },
-      {
-        "nombre": "New York Knicks ",
-        "conferencia": "Eastern",
-        "historia": "Es uno de los miembros fundadores de la BAA en 1946, y son, junto con los Boston Celtics, uno de los dos únicos equipos originales de la NBA que todavía permanecen en la misma ciudad de su fundación. De acuerdo con la revista Forbes, los New York Knicks son el tercer club deportivo más valioso del mundo y el primero de la NBA con un valor estimado de 4.600 millones de dólares. ",
-        "titulos": 2,
-          "sede": "Madison Square Garden"
-        },
-      {
-        "nombre": "Orlando Magic",
-        "conferencia": "Eastern",
-        "historia": "Orlando Magic entró oficialmente en la NBA como una franquicia de expansión en 1989, una de las cuatro nuevas franquicias en expansión junto a Charlotte Hornets, Minnesota Timberwolves y Miami Heat, en un principio solo se planeó que llegaran tres nuevas franquicias, pero la expansión económica en Florida hizo que las ciudades de Miami y Orlando obtuvieran su propio equipo de baloncesto. ",
-        "titulos": 0 ,
-          "sede": "Amway Center"
-        },
-      {
-        "nombre": "Philadelphia 76ers",
-        "conferencia": "Eastern",
-        "historia": "El equipo fue fundado en 1946 en la ciudad neoyorquina de Syracuse con el nombre de Syracuse Nationals. A lo largo de su extensa historia, los 76ers han logrado 11 títulos de división, 5 de conferencia y han sido campeones de la NBA en dos ocasiones con el nombre actual (1967 y 1983) y una bajo el nombre de Syracuse Nationals (1955). Su nombre hace referencia a la fecha de la Declaración de Independencia de los Estados Unidos (1776). ",
-        "titulos": 3,
-          "sede": "Wells Fargo Center"
-        },
-      {
-        "nombre": "Toronto Raptors",
-        "conferencia": "Eastern",
-        "historia": "Llegaron a la liga tras la expansión que se realizó en 1995, junto con los Vancouver Grizzlies. Tras la marcha a Memphis de estos últimos en 2001, los Raptors quedaron como el único equipo fuera de las fronteras de los Estados Unidos. El 13 de junio de 2019, se convirtieron en el primer equipo no estadounidense en ganar la NBA. Para la temporada 2020-21 disputarán sus partidos como local en el estadio Amalie Arena en Tampa, Florida",
-        "titulos": 1,
-          "sede": "Scotiabank Arena"
-        },
-      {
-        "nombre": "Washington Wizards",
-        "conferencia": "Eastern",
-        "historia": "Los Wizards fueron conocidos hasta 1997 como Bullets (balas en español), pero cambiaron su nombre para evitar asociaciones con la criminalidad que dañasen la imagen de la ciudad de Washington.1​ Ganaron el campeonato de la NBA en 1978, finalizando además subcampeón en la temporada siguiente. Desde su fundación en 1961, la franquicia ha pasado por tres ciudades: Chicago, Baltimore y Washington ",
-        "titulos": 1,
-          "sede": "Capital One Arena"
-        },
-      {
-        "nombre": "Dallas Mavericks",
-        "conferencia": "Western",
-        "historia": "En 1979, el empresario Don Carter y su socio Norm Sonju solicitaron el permiso para traer una franquicia de la NBA a Dallas. El último equipo profesional de baloncesto había sido Dallas Chaparrals de la ABA, que se mudó a San Antonio en 1973 y se convirtió en San Antonio Spurs ",
-        "titulos": 1,
-          "sede": "American Airlines Center"
-        },
-      {
-        "nombre": "Denver Nuggets",
-        "conferencia": "Western",
-        "historia": "Tras comenzar a jugar en la ABA, el equipo fue criticado por estar localizado en Kansas City, Misuri, antes de moverse a Denver. Su concurso en la postemporada surgió desde un primer momento, llegando a acceder a las Finales de la ABA en su segundo año como Nuggets (anteriormente eran conocidos como Denver Rockets) aunque perdiendo ante New York Nets en seis partidos. ",
-        "titulos": 1,
-          "sede": "Ball Arena"
-        },
-      {
-        "nombre": "Golden State Warriors",
-        "conferencia": "Western",
-        "historia": "El equipo fue fundado en Filadelfia en 1946 con el nombre de Philadelphia Warriors como miembro de la Basketball Association of America (BAA). A principios de la década de 1960 se mudaron al área de la Bahía de San Francisco, donde primero adoptaron el nombre de San Francisco Warriors y en 1971, el nombre con el que se los conoce en la actualidad. ",
-        "titulos": 7,
-          "sede": "Chase Center"
-        },
-      {
-        "nombre": "Houston Rockets",
-        "conferencia": "Western",
-        "historia": "El equipo fue fundado en 1967 en la ciudad californiana de San Diego con el nombre de San Diego Rockets antes de trasladarse a Houston tres años después ",
-        "titulos": 2,
-          "sede": "Toyota Center"
-        },
-      {
-        "nombre": "Los Angeles Clippers",
-        "conferencia": "Western",
-        "historia": "El 8 de abril de 2013, tras batir a Los Angeles Lakers por 109-95 consiguen su primer título de división de la NBA.1​ La consecuencia de esos resultados ha sido, entre otras cosas, los tres cambios de ciudad que ha sufrido el equipo desde su fundación, pasando por Buffalo, San Diego y actualmente Los Ángeles. ",
-        "titulos": 0,
-          "sede": "Staples Center"
-        },
-      {
-        "nombre": "Los Angeles Lakers",
-        "conferencia": "Western",
-        "historia": "Fue el 25 de abril de 1960 cuando Bob Short anunció que Minneapolis Lakers pasaba a ser Los Angeles Lakers, el equipo se marchaba a California, un mercado más productivo tanto económica como deportivamente. Chicago o San Francisco fueron otras de las opciones que manejó Short. El ejemplo de los Brooklyn Dodgers de béisbol tuvo también que ver en la decisión. Estos se marcharon en 1958 a Los Ángeles reportando grandes beneficios en sus primeras temporadas. Hoy en día siguen afincados allí. ",
-        "titulos": 17,
-          "sede": "Satples Center"
-        },
-      {
-        "nombre": "Memphis Grizzlies",
-        "conferencia": "Western",
-        "historia": "El equipo fue fundado en 1995 en Vancouver con el nombre de Vancouver Grizzlies y en 2001 se trasladó a Memphis ",
-        "titulos": 0,
-          "sede": "FedExForum"
-        },
-      {
-        "nombre": "Minnesota Timberwolves",
-        "conferencia": "Western",
-        "historia": "El baloncesto profesional regresó a Mineápolis en 1987, cuando la NBA concedió una de las dos nuevas franquicias (junto con Orlando Magic) a los propietarios originales Marv Wolfenson y Harvey Ratner para comenzar a jugar en la temporada 1989-90.  ",
-        "titulos": 0,
-          "sede": "Target Center."
-        },
-      {
-        "nombre": "New Orleans Pelicans",
-        "conferencia": "Western",
-        "historia": "Los Pelicans fueron fundados como New Orleans Hornets en el año 2002 cuando el propietario de los Charlotte Hornets, George Shinn, recolocó la franquicia en Nueva Orleans. Su primer partido como los New Orleans Hornets fueron contra los Jazz en el día del retiro de la camiseta de Pete Maravich. ",
-        "titulos": 0,
-          "sede": "Smoothie King Center"
-        },
-      {
-        "nombre": "Oklahoma City Thunders",
-        "conferencia": "Western",
-        "historia": "Anteriormente llamados Seattle SuperSonics (1967-2008) y radicados en la ciudad de Seattle, tras su traslado en 2008 disputan sus partidos en el Paycom Center de Oklahoma City. ",
-        "titulos": 1,
-          "sede": "Paycom Center"
-        },
-      {
-        "nombre": "Phoenix Suns",
-        "conferencia": "Western",
-        "historia": "Llegaron a la NBA en la expansión de ésta en 1968. En sus 51 años de historia, el equipo ha ganado 3 títulos de conferencia, 7 títulos de división y ha disputado tres Finales de la NBA, en 1976, 1993 y 2021, perdiendo las tres. Podrían considerarse sus jugadores más emblemáticos tanto al medallista olímpico Charles Barkley, contemporáneo a Michael Jordan, con quien disputó las finales de 1993, y compartió el denominado Dream Team de Estados Unidos en el año 1992; junto con el base Steve Nash, 2 veces consecutivas elegido MVP (2005 y 2006) de la NBA y 8 veces elegido para el All-Star Game. Es, además, el máximo asistente en la historia de la franquicia. ",
-        "titulos":0,
-          "sede": "Footprint Center"
-        },
-      {
-        "nombre": "Portland Trail Blazers",
-        "conferencia": "Western",
-        "historia": "Los Blazers han llegado a las Finales de la NBA en tres ocasiones, ganando su único campeonato en 1977 y finalizando subcampeones en 1990 y 1992.3​ Además, el equipo se ha clasificado para playoffs en 25 de las 36 temporadas que llevan en la NBA desde su existencia, incluyendo una racha de 21 apariciones consecutivas desde 1983 hasta 2003 ",
-        "titulos": 1,
-          "sede": "Moda Center"
-        },
-      {
-        "nombre": "Sacramento Kings",
-        "conferencia": "Western",
-        "historia": "La franquicia fue fundada en 1923 en la ciudad de Rochester, Nueva York con el nombre de Seagrams, pasando posteriormente por las ciudades de Cincinnati y Kansas City/Omaha antes de trasladarse en 1985 a Sacramento. Los Kings disputan sus partidos como locales en el Golden 1 Center. Los éxitos a lo largo de su historia han sido el campeonato de la NBL de 1946 y el de 1951 de la NBA (como Royals). Además, poseen cinco títulos de división y uno de conferencia. ",
-        "titulos": 1,
-          "sede": "Golden 1 Center"
-        },
-      {
-        "nombre": "San Antonio Spurs",
-        "conferencia": "Western",
-        "historia": "El equipo fue fundado en 1967 en Dallas con el nombre de Dallas Chaparrals, uno de los miembros originales de la American Basketball Association (ABA). En la temporada 1970-71 cambiaron su nombre por el de Texas Chaparrals y en 1973 se trasladaron a San Antonio, donde adoptaron su denominación actual. Los Spurs son uno de los equipos más laureados de la NBA. A lo largo de su historia han ganado cinco campeonatos de la NBA,2​ seis títulos de conferencia y veintidós títulos de división ",
-        "titulos": 5,
-          "sede": "AT&T Center"
-        },
-      {
-        "nombre": "Utah Jazz",
-        "conferencia": "Western",
-        "historia": "El equipo fue fundado en 1974 en Nueva Orleans con el nombre de New Orleans Jazz. En 1979 se trasladaron a Salt Lake City, donde mantuvieron la denominación de Jazz a pesar de la nula tradición de ese género musical en Utah. ",
-        "titulos":0,
-          "sede": "Vivint Arena"
-        }
-       
+  {
+    "nombre": "Atlanta Hawks",
+    "conferencia": "Eastern",
+    "historia": "El equipo fue fundado en 1946 como Tri-Cities Blackhawks en la zona del río Misisipi. Tras trasladarse a Milwaukee, Wisconsin, en 1951, la franquicia fue renombrada como Milwaukee Hawks. Antes de la temporada 1955-56, los Hawks se mudaron a San Luis, Misuri, pasando en la ciudad trece temporadas y ganando el campeonato de 1958, el único en la historia de la franquicia. Finalmente, en 1968 se movieron a Atlanta, Georgia.  ",
+    "titulos": 1,
+    "sede": " State Farm Arena"
+  },
+  {
+    "nombre": "Boston Celtics",
+    "conferencia": "Eastern",
+    "historia": "Fundado en 1946, con sus 17 campeonatos es el equipo más laureado de la historia de la NBA,1 junto con Los Angeles Lakers que, con su anillo ganado en 2020, consiguieron igualarles en campeonatos. El equipo dominó la NBA desde 1957 hasta 1969 con once anillos de campeón, ocho de ellos consecutivos, récord de la liga. ",
+    "titulos": 17,
+    "sede": "TD Garden"
+  },
+  {
+    "nombre": "Brooklyn Nets",
+    "conferencia": "Eastern",
+    "historia": "El equipo fue fundado en 1967 con el nombre de New Jersey Americans y comenzó jugando en la ABA. En 1968 la franquicia se mudó a Nueva York, donde adoptaron el nombre de New York Nets. Con este nombre ingresaron en la NBA en 1976. Un año después regresaron a Nueva Jersey, donde se llamaron New Jersey Nets, hasta que en el año 2012 se trasladaron a Brooklyn y pasaron a ser denominados Brooklyn Nets.",
+    "titulos": 0,
+    "sede": "Barclays Center"
+  },
+  {
+    "nombre": "Charlotte Hornets",
+    "conferencia": "Eastern",
+    "historia": "Los Hornets originales fueron fundados en 1988 como un equipo de expansión, propiedad del empresario George Shinn. En 2002, Shinn trasladó el equipo a Nueva Orleans, que se convirtió en los New Orleans Hornets. Dos años después, la NBA estableció un nuevo equipo de expansión para Charlotte: los Charlotte Bobcats. En el año 2013, la franquicia de Luisiana anunció que cambiaría su nombre por el de New Orleans Pelicans,1 y al mismo tiempo Charlotte comunicó que recuperaría la denominación Hornets",
+    "titulos": 0,
+    "sede": "Spectrum Center"
+  },
+  {
+    "nombre": "Chicago Bulls",
+    "conferencia": "Eastern",
+    "historia": "Fundado en 1966. Es el tercer equipo profesional con sede en esta ciudad tras Chicago Packers/Zephyrs y Chicago Stags, equipo que participó en los años 1940 en la BAA, antigua denominación de la liga profesional norteamericana de baloncesto.",
+    "titulos": 6,
+    "sede": "United Center"
+  },
+  {
+    "nombre": "Cleveland Cavaliers",
+    "conferencia": "Eastern",
+    "historia": "Los Cavaliers comenzaron jugando en la NBA en 1970, siendo propietario del equipo Nick Mileti. Por entonces, jugaban sus partidos como local en el Cleveland Arena y eran entrenados por Bill Fitch. En su primera temporada lograron un balance de 15 victorias por 67 derrotas.",
+    "titulos": 1,
+    "sede": "Rocket Mortgage FieldHouse"
+  },
+  {
+    "nombre": "Detroit Pistons",
+    "conferencia": "Eastern",
+    "historia": "La franquicia fue fundada en 1941 en Fort Wayne, Indiana con el nombre de Fort Wayne Zollner Pistons. Jugaron en la National Basketball League (NBL) hasta su entrada en la Basketball Association of America (BAA) en 1948. En 1957 su fundador, Fred Zollner, trasladó al equipo a Detroit.",
+    "titulos": 3,
+    "sede": "Little Caesars Arena"
+  },
+  {
+    "nombre": "Indiana Pacers",
+    "conferencia": "Eastern",
+    "historia": "Los Pacers comenzaron a jugar en la temporada 1967-68 de la ABA, una liga alternativa a la NBA. Durante sus seis primeros años, jugaron en el Indiana State Fairgrounds Coliseum, ahora llamado Pepsi Coliseum, mudándose en 1974 al Market Square Arena, situado en el centro de la ciudad de Indianápolis.",
+    "titulos": 0,
+    "sede": "Gainbridge Fieldhouse"
+  },
+  {
+    "nombre": "Miami Heat",
+    "conferencia": "Eastern",
+    "historia": "El equipo fue fundado en 1988 gracias a la expansión de la NBA en 1987. Cuenta con tres títulos de la NBA, obtenidos en la temporada 2005-06 al vencer a Dallas Mavericks (4-2), en la 2011-12 derrotando a Oklahoma City Thunder (4-1) y en la 2012-13 derrotando en el séptimo partido a San Antonio Spurs (4-3). Además de los tres anillos, ha obtenido 16 títulos de división.",
+    "titulos": 3,
+    "sede": "Kaseya Center"
+  },
+  {
+    "nombre": "Milwaukee Bucks",
+    "conferencia": "Eastern",
+    "historia": "Los Milwaukee Bucks fueron creados en enero de 1968, cuando la NBA llevó el baloncesto a la ciudad de Milwaukee, en Wisconsin. El primer partido oficial de los Bucks fue contra los Chicago Bulls, siendo la 1968-69, la primera en la historia de la franquicia. ",
+    "titulos": 2,
+    "sede": "Fiserv Forum"
+  },
+  {
+    "nombre": "New York Knicks ",
+    "conferencia": "Eastern",
+    "historia": "Es uno de los miembros fundadores de la BAA en 1946, y son, junto con los Boston Celtics, uno de los dos únicos equipos originales de la NBA que todavía permanecen en la misma ciudad de su fundación. De acuerdo con la revista Forbes, los New York Knicks son el tercer club deportivo más valioso del mundo y el primero de la NBA con un valor estimado de 4.600 millones de dólares. ",
+    "titulos": 2,
+    "sede": "Madison Square Garden"
+  },
+  {
+    "nombre": "Orlando Magic",
+    "conferencia": "Eastern",
+    "historia": "Orlando Magic entró oficialmente en la NBA como una franquicia de expansión en 1989, una de las cuatro nuevas franquicias en expansión junto a Charlotte Hornets, Minnesota Timberwolves y Miami Heat, en un principio solo se planeó que llegaran tres nuevas franquicias, pero la expansión económica en Florida hizo que las ciudades de Miami y Orlando obtuvieran su propio equipo de baloncesto. ",
+    "titulos": 0,
+    "sede": "Amway Center"
+  },
+  {
+    "nombre": "Philadelphia 76ers",
+    "conferencia": "Eastern",
+    "historia": "El equipo fue fundado en 1946 en la ciudad neoyorquina de Syracuse con el nombre de Syracuse Nationals. A lo largo de su extensa historia, los 76ers han logrado 11 títulos de división, 5 de conferencia y han sido campeones de la NBA en dos ocasiones con el nombre actual (1967 y 1983) y una bajo el nombre de Syracuse Nationals (1955). Su nombre hace referencia a la fecha de la Declaración de Independencia de los Estados Unidos (1776). ",
+    "titulos": 3,
+    "sede": "Wells Fargo Center"
+  },
+  {
+    "nombre": "Toronto Raptors",
+    "conferencia": "Eastern",
+    "historia": "Llegaron a la liga tras la expansión que se realizó en 1995, junto con los Vancouver Grizzlies. Tras la marcha a Memphis de estos últimos en 2001, los Raptors quedaron como el único equipo fuera de las fronteras de los Estados Unidos. El 13 de junio de 2019, se convirtieron en el primer equipo no estadounidense en ganar la NBA. Para la temporada 2020-21 disputarán sus partidos como local en el estadio Amalie Arena en Tampa, Florida",
+    "titulos": 1,
+    "sede": "Scotiabank Arena"
+  },
+  {
+    "nombre": "Washington Wizards",
+    "conferencia": "Eastern",
+    "historia": "Los Wizards fueron conocidos hasta 1997 como Bullets (balas en español), pero cambiaron su nombre para evitar asociaciones con la criminalidad que dañasen la imagen de la ciudad de Washington.1​ Ganaron el campeonato de la NBA en 1978, finalizando además subcampeón en la temporada siguiente. Desde su fundación en 1961, la franquicia ha pasado por tres ciudades: Chicago, Baltimore y Washington ",
+    "titulos": 1,
+    "sede": "Capital One Arena"
+  },
+  {
+    "nombre": "Dallas Mavericks",
+    "conferencia": "Western",
+    "historia": "En 1979, el empresario Don Carter y su socio Norm Sonju solicitaron el permiso para traer una franquicia de la NBA a Dallas. El último equipo profesional de baloncesto había sido Dallas Chaparrals de la ABA, que se mudó a San Antonio en 1973 y se convirtió en San Antonio Spurs ",
+    "titulos": 1,
+    "sede": "American Airlines Center"
+  },
+  {
+    "nombre": "Denver Nuggets",
+    "conferencia": "Western",
+    "historia": "Tras comenzar a jugar en la ABA, el equipo fue criticado por estar localizado en Kansas City, Misuri, antes de moverse a Denver. Su concurso en la postemporada surgió desde un primer momento, llegando a acceder a las Finales de la ABA en su segundo año como Nuggets (anteriormente eran conocidos como Denver Rockets) aunque perdiendo ante New York Nets en seis partidos. ",
+    "titulos": 1,
+    "sede": "Ball Arena"
+  },
+  {
+    "nombre": "Golden State Warriors",
+    "conferencia": "Western",
+    "historia": "El equipo fue fundado en Filadelfia en 1946 con el nombre de Philadelphia Warriors como miembro de la Basketball Association of America (BAA). A principios de la década de 1960 se mudaron al área de la Bahía de San Francisco, donde primero adoptaron el nombre de San Francisco Warriors y en 1971, el nombre con el que se los conoce en la actualidad. ",
+    "titulos": 7,
+    "sede": "Chase Center"
+  },
+  {
+    "nombre": "Houston Rockets",
+    "conferencia": "Western",
+    "historia": "El equipo fue fundado en 1967 en la ciudad californiana de San Diego con el nombre de San Diego Rockets antes de trasladarse a Houston tres años después ",
+    "titulos": 2,
+    "sede": "Toyota Center"
+  },
+  {
+    "nombre": "Los Angeles Clippers",
+    "conferencia": "Western",
+    "historia": "El 8 de abril de 2013, tras batir a Los Angeles Lakers por 109-95 consiguen su primer título de división de la NBA.1​ La consecuencia de esos resultados ha sido, entre otras cosas, los tres cambios de ciudad que ha sufrido el equipo desde su fundación, pasando por Buffalo, San Diego y actualmente Los Ángeles. ",
+    "titulos": 0,
+    "sede": "Staples Center"
+  },
+  {
+    "nombre": "Los Angeles Lakers",
+    "conferencia": "Western",
+    "historia": "Fue el 25 de abril de 1960 cuando Bob Short anunció que Minneapolis Lakers pasaba a ser Los Angeles Lakers, el equipo se marchaba a California, un mercado más productivo tanto económica como deportivamente. Chicago o San Francisco fueron otras de las opciones que manejó Short. El ejemplo de los Brooklyn Dodgers de béisbol tuvo también que ver en la decisión. Estos se marcharon en 1958 a Los Ángeles reportando grandes beneficios en sus primeras temporadas. Hoy en día siguen afincados allí. ",
+    "titulos": 17,
+    "sede": "Satples Center"
+  },
+  {
+    "nombre": "Memphis Grizzlies",
+    "conferencia": "Western",
+    "historia": "El equipo fue fundado en 1995 en Vancouver con el nombre de Vancouver Grizzlies y en 2001 se trasladó a Memphis ",
+    "titulos": 0,
+    "sede": "FedExForum"
+  },
+  {
+    "nombre": "Minnesota Timberwolves",
+    "conferencia": "Western",
+    "historia": "El baloncesto profesional regresó a Mineápolis en 1987, cuando la NBA concedió una de las dos nuevas franquicias (junto con Orlando Magic) a los propietarios originales Marv Wolfenson y Harvey Ratner para comenzar a jugar en la temporada 1989-90.  ",
+    "titulos": 0,
+    "sede": "Target Center."
+  },
+  {
+    "nombre": "New Orleans Pelicans",
+    "conferencia": "Western",
+    "historia": "Los Pelicans fueron fundados como New Orleans Hornets en el año 2002 cuando el propietario de los Charlotte Hornets, George Shinn, recolocó la franquicia en Nueva Orleans. Su primer partido como los New Orleans Hornets fueron contra los Jazz en el día del retiro de la camiseta de Pete Maravich. ",
+    "titulos": 0,
+    "sede": "Smoothie King Center"
+  },
+  {
+    "nombre": "Oklahoma City Thunders",
+    "conferencia": "Western",
+    "historia": "Anteriormente llamados Seattle SuperSonics (1967-2008) y radicados en la ciudad de Seattle, tras su traslado en 2008 disputan sus partidos en el Paycom Center de Oklahoma City. ",
+    "titulos": 1,
+    "sede": "Paycom Center"
+  },
+  {
+    "nombre": "Phoenix Suns",
+    "conferencia": "Western",
+    "historia": "Llegaron a la NBA en la expansión de ésta en 1968. En sus 51 años de historia, el equipo ha ganado 3 títulos de conferencia, 7 títulos de división y ha disputado tres Finales de la NBA, en 1976, 1993 y 2021, perdiendo las tres. Podrían considerarse sus jugadores más emblemáticos tanto al medallista olímpico Charles Barkley, contemporáneo a Michael Jordan, con quien disputó las finales de 1993, y compartió el denominado Dream Team de Estados Unidos en el año 1992; junto con el base Steve Nash, 2 veces consecutivas elegido MVP (2005 y 2006) de la NBA y 8 veces elegido para el All-Star Game. Es, además, el máximo asistente en la historia de la franquicia. ",
+    "titulos": 0,
+    "sede": "Footprint Center"
+  },
+  {
+    "nombre": "Portland Trail Blazers",
+    "conferencia": "Western",
+    "historia": "Los Blazers han llegado a las Finales de la NBA en tres ocasiones, ganando su único campeonato en 1977 y finalizando subcampeones en 1990 y 1992.3​ Además, el equipo se ha clasificado para playoffs en 25 de las 36 temporadas que llevan en la NBA desde su existencia, incluyendo una racha de 21 apariciones consecutivas desde 1983 hasta 2003 ",
+    "titulos": 1,
+    "sede": "Moda Center"
+  },
+  {
+    "nombre": "Sacramento Kings",
+    "conferencia": "Western",
+    "historia": "La franquicia fue fundada en 1923 en la ciudad de Rochester, Nueva York con el nombre de Seagrams, pasando posteriormente por las ciudades de Cincinnati y Kansas City/Omaha antes de trasladarse en 1985 a Sacramento. Los Kings disputan sus partidos como locales en el Golden 1 Center. Los éxitos a lo largo de su historia han sido el campeonato de la NBL de 1946 y el de 1951 de la NBA (como Royals). Además, poseen cinco títulos de división y uno de conferencia. ",
+    "titulos": 1,
+    "sede": "Golden 1 Center"
+  },
+  {
+    "nombre": "San Antonio Spurs",
+    "conferencia": "Western",
+    "historia": "El equipo fue fundado en 1967 en Dallas con el nombre de Dallas Chaparrals, uno de los miembros originales de la American Basketball Association (ABA). En la temporada 1970-71 cambiaron su nombre por el de Texas Chaparrals y en 1973 se trasladaron a San Antonio, donde adoptaron su denominación actual. Los Spurs son uno de los equipos más laureados de la NBA. A lo largo de su historia han ganado cinco campeonatos de la NBA,2​ seis títulos de conferencia y veintidós títulos de división ",
+    "titulos": 5,
+    "sede": "AT&T Center"
+  },
+  {
+    "nombre": "Utah Jazz",
+    "conferencia": "Western",
+    "historia": "El equipo fue fundado en 1974 en Nueva Orleans con el nombre de New Orleans Jazz. En 1979 se trasladaron a Salt Lake City, donde mantuvieron la denominación de Jazz a pesar de la nula tradición de ese género musical en Utah. ",
+    "titulos": 0,
+    "sede": "Vivint Arena"
+  }
 ]

@@ -8,26 +8,22 @@ router.get("/:nombre", (req, res, next) => {
 
   Equipo.findOne({ nombre: nombreEquipo })
     .then((equipo) => {
-      res.render("detallesEquipo", { equipo });
+      Leyenda.find({ Equipo:equipo._id})//porpiedad de leyenda
+      .then((leyendaArr) =>{
+        console.log(leyendaArr)
+
+          res.render("detallesEquipo", { equipo, leyendaArr});
+      })
+
+
+      
+
     })
     .catch((error) => {
       next(error);
     });
 });
 
-router.get("/:nombre", (req, res, next) => {
-  Leyenda.findById(req.Equipo.nombre)
- .then((response)=>{
-console.log(response)
-res.render("detallesEquipo", {response
-       
-  });
- })
 
-.catch((error)=>{
-next(error)})
-
-  
-});
 
 module.exports = router;

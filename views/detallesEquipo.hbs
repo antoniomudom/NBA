@@ -9,6 +9,9 @@
         <p><strong>Historia:</strong> {{ equipo.historia }}</p>
         <p><strong>Títulos:</strong> {{ equipo.titulos }}</p>
         <p><strong>Sede:</strong> {{ equipo.sede }}</p>
+        {{#each  leyendaArr}}
+         <p><strong>Leyenda:</strong> {{ this.nombre }}</p>
+         {{/each}}
     </div>
     
     

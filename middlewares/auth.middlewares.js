@@ -27,6 +27,9 @@ function isLoggedIn(req, res, next) {
     } else {
       // creo una variable local que indique que si está dentro
       res.locals.isUserActive = true;
+      if(req.session.user.role==="admin"){
+          res.locals.isUserAdmin=true
+      }
     }
   
     next() // despues de actualizar la variable, continua con las rutas
