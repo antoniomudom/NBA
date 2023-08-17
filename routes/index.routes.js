@@ -18,6 +18,8 @@ router.use("/user", userRouter)
 const legendRouter = require("./legend.routes.js")
 router.use("/mylegend", legendRouter)
 
+const equipoRouter = require("./equipos.routes.js");
+router.use("/equipo", equipoRouter);
 
 //routa de conferencias
 router.get("/conferencias", (req, res, next) => {
