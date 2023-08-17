@@ -17,6 +17,7 @@ h1 {
 }
 .artattack {
   display: flex;
+  
   justify-content: center;
   justify-content: space-between;
 
