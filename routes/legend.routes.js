@@ -6,7 +6,7 @@ const { isLoggedIn, isAdmin } = require("../middlewares/auth.middlewares.js")
 
   
 //ruta post a /mylegend/mylegend
-router.post("/mylegend", async (req, res, next) => {
+router.post("/mylegend",isLoggedIn, async (req, res, next) => {
   console.log(req.body);
 
   // validaciones
@@ -60,7 +60,7 @@ router.get("/legend",(req, res, next) => {
 
 
 
-router.get("/legend-list", async (req, res, next) => {
+router.get("/legend-list",isLoggedIn, async (req, res, next) => {
   try {
     const leyendas = await Leyenda.find();
     res.render("legend-list.hbs", { leyendas });
@@ -70,7 +70,7 @@ router.get("/legend-list", async (req, res, next) => {
 });
 
 // Ver propiedades de una leyenda
-router.get("/legend-details/:id", async (req, res, next) => {
+router.get("/legend-details/:id",isLoggedIn, async (req, res, next) => {
   try {
 const leyenda = await Leyenda.findById(req.params.id).populate("Equipo");
     if     (!leyenda) {
@@ -82,7 +82,7 @@ const leyenda = await Leyenda.findById(req.params.id).populate("Equipo");
     next(error);
   }
 });
-router.get("/legend-edit/:id", async(req,res,next)=>{
+router.get("/legend-edit/:id",isLoggedIn, async(req,res,next)=>{
  
   try {
     const allTeams= await  Equipo.find().select({ nombre: 1 });
@@ -112,7 +112,7 @@ router.post("/legend-edit/:id", async (req, res, next) => {
   }
 });
 
-router.get("/legend-details/:id", async (req, res, next) => {
+router.get("/legend-details/:id",isLoggedIn, async (req, res, next) => {
   try {
     const leyenda = await Leyenda.findById(req.params.id).populate("Equipo");
     res.render("legend-details.hbs", { leyenda });
@@ -122,7 +122,7 @@ router.get("/legend-details/:id", async (req, res, next) => {
 });
 
 // Acción de eliminar leyenda (POST)
-router.post("/legend-delete/:id", async (req, res, next) => {
+router.post("/legend-delete/:id",isLoggedIn, async (req, res, next) => {
   try {
     await Leyenda.findByIdAndDelete(req.params.id);
     res.redirect("/mylegend/legend-list");

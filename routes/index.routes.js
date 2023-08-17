@@ -3,6 +3,7 @@ const router = express.Router();
 const Equipo = require("../models/Team.model.js");
 const { updateLocals } = require("../middlewares/auth.middlewares.js");
 router.use(updateLocals);
+const { isLoggedIn, isAdmin } = require("../middlewares/auth.middlewares.js")
 
 /* GET home page */
 router.get("/", (req, res, next) => {
@@ -23,24 +24,24 @@ const User = require("../models/User.model.js");
 router.use("/equipo", equipoRouter);
 
 //routa de conferencias
-router.get("/conferencias", (req, res, next) => {
+router.get("/conferencias",isLoggedIn, (req, res, next) => {
   res.render("conferencias");
 });
-router.get("/eastern", (req, res, next) => {
+router.get("/eastern",isLoggedIn, (req, res, next) => {
   res.render("eastern");
 });
 
-router.get("/eastern", (req, res, next) => {
+router.get("/eastern",isLoggedIn, (req, res, next) => {
   res.render("eastern");
 });
 
-router.get("/western", (req, res, next) => {
+router.get("/western",isLoggedIn, (req, res, next) => {
   res.render("western");
 });
 
 //Ruta de pronósticos
 
-router.get("/pronostico", (req, res, next) => {
+router.get("/pronostico",isLoggedIn, (req, res, next) => {
   Equipo.find()
     .select({ nombre: 1 })
 
@@ -55,7 +56,7 @@ router.get("/pronostico", (req, res, next) => {
     });
 });
 //tiene que ir a la base datos y traer el favorito y el pronostico del usuario
-router.get("/pronostico-favorito", (req, res, next) => {
+router.get("/pronostico-favorito",isLoggedIn, (req, res, next) => {
   User.findById(req.session.user._id).populate("pronostico").populate("favorito") 
  .then((response)=>{
 console.log(response)

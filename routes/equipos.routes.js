@@ -2,8 +2,11 @@ const express = require("express");
 const router = express.Router();
 const Equipo = require("../models/Team.model.js");
 const Leyenda = require("../models/Legend.model.js");
+const { isLoggedIn, isAdmin } = require("../middlewares/auth.middlewares.js")
 
-router.get("/:nombre", (req, res, next) => {
+
+
+router.get("/:nombre",isLoggedIn, (req, res, next) => {
   const nombreEquipo = req.params.nombre;
 
   Equipo.findOne({ nombre: nombreEquipo })
