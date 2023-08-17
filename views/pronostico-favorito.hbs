@@ -1,27 +1,19 @@
 
 
-<div>
+<div class="supercopa">
+    <h3>Pronóstico Favorito</h3>
 
-    <h3>Pronóstico</h3>
+    <ul>
+        <h4>Equipos Campeones:</h4>
+        {{#each championTeams}}
+        <li>{{this.nombre}}</li>
+        {{/each}}
+    </ul>
 
-    {{#each this.allTeams}}
-
-    <li>Este es tu equipo favorito para el título:{{this.nombre}}</li>
-
-
-  {{/each}}
-
-
-
-<div>
-
-    <h3>Favoritos</h3>
-
-{{#each this.allTeams}}
-
-    <li>Al equipo al que amas:{{this.nombre}}</li>
-
-
-  {{/each}}
-
+    <ul>
+        <h4>Equipos Amados:</h4>
+        {{#each favoriteTeams}}
+        <li>{{this.nombre}}</li>
+        {{/each}}
+    </ul>
 </div>

@@ -91,10 +91,10 @@ router.get("/legend-edit/:id", async(req,res,next)=>{
   try {
     const allTeams= await  Equipo.find().select({ nombre: 1 });
     const leyenda = await Leyenda.findById(req.params.id).populate("Equipo");
-        if     (!leyenda) {
-          res.status(404).send("Leyenda no encontrada");
-          return;
-        }
+        // if     (!leyenda) {
+        //   res.status(404).send("Leyenda no encontrada");
+          // return;
+        // }
         res.render("legend-edit.hbs", { leyenda,allTeams });
       } catch (error) {
         next(error);

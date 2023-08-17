@@ -10,15 +10,19 @@
 
   <body>
 
-    <nav>
+    <div class="artattack">
+      
+    
       <a href="/">Home</a>
 
-    </nav>
+    
+
+    
     {{#if isUserActive}}
       <a href="/user">Ver tu perfil</a>
       <!--futuros accesos-->
       <a href="/conferencias">Conferencias</a>
-      <a href="/pronostico">Pronostico</a>
+      <a href="/pronostico">Pronóstico</a>
      <a href="/pronostico-favorito">Tus elecciones</a>
       <a href="/mylegend/legend">Añade tu leyenda</a>
       <a href="/mylegend/legend-list">Leyendas</a>
@@ -36,9 +40,13 @@
     <nav>
 
     </nav>
+
+    </div>
+
     {{{body}}}
 
     <script src="/js/script.js"></script>
   </body>
+  <footer>Developers: Luis Cortés y Antonio Muñoz</footer>
 
 </html>
