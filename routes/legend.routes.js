@@ -2,12 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Leyenda = require("../models/Legend.model.js");
 const Equipo = require("../models/Team.model.js");
+const { isLoggedIn, isAdmin } = require("../middlewares/auth.middlewares.js")
 
-//creacion de leyenda mylegend
-router.get("/", (req, res, next) => {
-  
-    res.render("mylegend.hbs"); 
-  })
   
 //ruta post a /mylegend/mylegend
 router.post("/mylegend", async (req, res, next) => {
@@ -116,8 +112,17 @@ router.post("/legend-edit/:id", async (req, res, next) => {
   }
 });
 
+router.get("/legend-details/:id", async (req, res, next) => {
+  try {
+    const leyenda = await Leyenda.findById(req.params.id).populate("Equipo");
+    res.render("legend-details.hbs", { leyenda });
+  } catch (error) {
+    next(error);
+  }
+});
+
 // Acción de eliminar leyenda (POST)
-router.post("/legend-delete/:id", async (req, res, next) => {
+router.post("/legend-delete/:id",isAdmin, async (req, res, next) => {
   try {
     await Leyenda.findByIdAndDelete(req.params.id);
     res.redirect("/mylegend/legend-list");

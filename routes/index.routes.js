@@ -54,31 +54,36 @@ router.get("/pronostico", (req, res, next) => {
       next(error);
     });
 });
-
+//tiene que ir a la base datos y traer el favorito y el pronostico del usuario
 router.get("/pronostico-favorito", (req, res, next) => {
-  // Realiza la lógica para obtener los datos guardados
-  res.render("pronostico-favorito.hbs", {
-    championTeams: [], // aqui va el equipo que creemos que va a salir campeón. Si fuera fútbol sería el Sevilla FC
-    favoriteTeams: [], // aqui dentro va el dato del equipo favorito
+  User.findById(req.session.user._id).populate("pronostico").populate("favorito") 
+ .then((response)=>{
+console.log(response)
+res.render("pronostico-favorito.hbs", {oneUser:response
+       
   });
+ })
+
+.catch((error)=>{
+next(error)})
+
+  
 });
 
+//recoge datos del formulario e los introduce en la base de datos
 router.post("/pronostico-favorito", (req, res, next) => {
-  const championTeams = req.body.teams; // Recupera id de los equipos campeones seleccionados
+  const championTeams = req.body.teams; // Recuperaipos campeones seleccionados
   const favoriteTeams = req.body.favoriteTeams; // igual que arriba pero de los equipos amados seleccionados
-  console.log(championTeams)
-  console.log(favoriteTeams)
+ // console.log(championTeams)
+  //console.log(favoriteTeams)
   User.findByIdAndUpdate(req.session.user._id,{pronostico:championTeams})//ide del usuario logueado,propiedd que queremos actualizar del usuario) //recupera los datos de la DB del array championTeams(del equipo seleccionado) buscandolo por ID
-    .then((championTeamsData) => {
+    .then(() => {
       // Realiza la lógica para buscar los equipos amados en la base de datos
       User.findByIdAndUpdate(req.session.user._id,{favorito:favoriteTeams}) //lo mismo que en championteams pero de favoriteTeam
-        .then((favoriteTeamsData) => {
-          res.render("pronostico-favorito.hbs", {
-            championTeams: championTeamsData,
-            favoriteTeams: favoriteTeamsData,
-          });
-          console.log(championTeams)
-          console.log(favoriteTeams)
+        .then(() => {
+          res.redirect("/pronostico-favorito")
+          //console.log(championTeams)
+          //console.log(favoriteTeams)
         })
         .catch((error) => {
           next(error);

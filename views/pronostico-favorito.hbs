@@ -4,16 +4,12 @@
     <h3>Pronóstico Favorito</h3>
 
     <ul>
-        <h4>Equipos Campeones:</h4>
-        {{#each championTeams}}
-        <li>{{this.nombre}}</li>
-        {{/each}}
+        <h4>Equipo Campeón:</h4>
+        {{this.oneUser.pronostico.nombre}}
     </ul>
 
     <ul>
-        <h4>Equipos Amados:</h4>
-        {{#each favoriteTeams}}
-        <li>{{this.nombre}}</li>
-        {{/each}}
+        <h4>Equipo Amado:</h4>
+        {{this.oneUser.favorito.nombre}}
     </ul>
 </div>
